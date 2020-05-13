@@ -15,7 +15,7 @@ Created By: [webtricks](https://bitcointalk.org/index.php?action=profile;u=92197
 
 ## How to run script locally
 ```
-$ git clone https://github.com/webt-tricks/dice.git
+$ git clone https://github.com/web-tricks/dice
 $ cd dice
 $ npm install
 # (make sure to install MongoDB before moving to next step. If you don't know how to install, please check YouTube guide, there are many)
