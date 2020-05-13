@@ -22,6 +22,7 @@ const retrieveBets = async(index) => {
         const response = await axios.get(`/user/bets?limit=5&skip=${index}`);
         return response.data;
     } catch(e) {
+        localStorage.clear();
         elements.myBetBox.innerHTML = e.response.data;
     }
 } 

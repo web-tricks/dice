@@ -16,14 +16,18 @@ const myBetsHolder = [];
 
 //Event Listener on Page Load
 window.addEventListener('DOMContentLoaded', async() => {
-    //showing user details if logged in
-    if (localStorage.getItem('user')) userView.loggedDetails(elements.tools,elements.serverBox);
+    if (localStorage.getItem('user')) {
+        //showing user details if logged in
+        userView.loggedDetails(elements.tools,elements.serverBox);
+
+        //loading last five bets of user
+        const myBets = await betControl.retrieveBets(myBetsHolder.length);
+        if (myBets) myBets.forEach(bet => myBetsHolder.push(bet));
+        myBetsHolder.forEach(bet => betView.displayBet(elements.myBetBox,bet,'beforeend'));
+    } 
+
     //showing random client seed
     clientSeedGenerator(elements.clientBox);
-    //loading last five bets of user
-    const myBets = await betControl.retrieveBets(myBetsHolder.length);
-    if (myBets) myBets.forEach(bet => myBetsHolder.push(bet));
-    myBetsHolder.forEach(bet => betView.displayBet(elements.myBetBox,bet,'beforeend'));
 
     //load messages
     await messageControl();
@@ -38,9 +42,6 @@ elements.tools.addEventListener('click', e => {
         userView.registerFormDisplay(elements.overlayBox);
     } else if (e.target === elements.loginButton) {
         userView.loginFormDisplay(elements.overlayBox);
-
-        //Clicking register button on login overlay
-        document.querySelector('.register__instead').onclick = () => userView.registerFormDisplay(elements.overlayBox);
     } else if (e.target.matches('.logout__user')) userControls.logoutUser();
 });
 
@@ -114,5 +115,8 @@ elements.overlayBox.addEventListener('click', e => {
         e.preventDefault();
         document.querySelector('.register__form-button').setAttribute('disabled', 'disabled');
         userControls.registerUser();
+    } else if (e.target.matches('.register__instead')) {
+        //Showing Register Form if someone clicked 'Or Register' on login form
+        userView.registerFormDisplay(elements.overlayBox);
     }
-  });
+});
