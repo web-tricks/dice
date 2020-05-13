@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webtricks Casino</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <span class="title">WEBTRICKS CASINO</span>
+        <span class="tools">
+            <button class="register__button btn__style">Register</button>
+            <span class="login__button">Login</span>
+        </span>
+    </header>
+    <div class="overlay__box"></div>
+    <div class="game__body">
+        <span class="server__span">
+            Server Seed Hash: 
+            <input type="text" class="server__box inp__style" value="Login to view" readonly>
+        </span>
+        <span class="client__span">
+            Client Seed:
+            <input type="text" class="client__box inp__style" maxlength="16" ><br>
+            (Edit above to set your client seed)
+        </span>
+        <div class="gaming__tools">
+            <input type="range" min="2" max="98" value="50" class="slider"><br>
+            Bet Amount: 
+            <input type="number" class="bet__box inp__style" value="0.0001" min="0.0000001">
+            Profit: 
+            <input type="number" class="profit__box inp__style" value="0.0001" readonly><br>
+            Roll 
+             <span class="roll__text">under</span>: 
+            <input type="number" class="roll__box inp__style" value="50" readonly>
+            <button class="shift">Shift</button>
+            Payout: 
+            <input type="number" class="payout__box inp__style" value="2" max="50" min="1.03">
+            Win Chance: 
+            <input type="number" class="chance__box inp__style" value="50" max="98" min="2"><br>
+            <input type="button" value="Roll" class="roll__button btn__style">
+        </div>
+        <div class="result__box"></div>
+        <div class="bets">
+            <h3>My Recent Bets</h3>
+            <div class="my__bets"></div>
+            <button class="load__bets btn__style">Load More Bets</button>
+        </div>
+    </div>
+    <div class="chat__body">
+        <div class="chat__messages"></div>
+        <div class="compose">
+            <form class="send__message">
+                <input class="message__input" required autocomplete="off">
+                <button class="send__button">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="credits">
+            Created By <a href="https://bitcointalk.org/index.php?action=profile;u=921974;sa=summary">webtricks</a> while enjoying Bitcoin Halving Party with 100 other Bitcoiners
+        </div>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

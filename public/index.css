@@ -1,0 +1,253 @@
+html, body {
+    height: 90%;
+}
+
+.tools {
+    float: right;
+}
+
+.game__body, .chat__body {
+    float: left;
+    margin-right: 2%;
+}
+
+header, .game__body {
+    width: 70%;
+}
+
+.chat__body {
+    width: 25%;
+    height: 100%;
+    border: 1px solid saddlebrown;
+}
+
+.register__form, .login__form, .verify__data {
+    width: 30%;
+	height: 200px;
+    position: absolute;
+    margin: auto;
+    top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    z-index: 50;
+    text-align: center;
+    padding: 20px;
+    background-color: wheat;
+}
+
+.black__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+    opacity: 0.6;
+    background-color: #000000;
+    z-index: 30;
+
+}
+
+.register__form input, .login__form input {
+    width: 95%;
+    height: 24px;
+    border-radius: 5%;
+    border: 1px solid brown;
+}
+
+.title {
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    color: rgb(63, 27, 11);
+}
+
+.btn__style {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid sienna;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.game__body {
+    margin-top: 48px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    text-align: center;
+    margin-left: 8px;
+    background-color: #FFF9F7;
+}
+
+.client__span {
+    float: right;
+    margin-right: 16px;
+}
+
+.server__span {
+    float: left;
+    margin-left: 16px;
+}
+
+.login__button, .bet__verify {
+    color: sienna;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.inp__style, .message__input {
+    background-color: rgb(250, 245, 245);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid sienna;
+    font-size: medium; 
+    margin-top: 16px;  
+}
+
+.gaming__tools {
+    margin-top: 48px;
+}
+
+.chat__messages {
+    height: 90%;
+    overflow: auto;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 20px;
+    margin-top: 48px;
+    background-color: #FFD5BA;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 35px;
+background: sienna;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+background: sienna;
+cursor: pointer;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.shift {
+    position: relative;
+    font-size: medium;
+    border: none;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    background-color: sienna;
+    cursor: pointer;
+    left: -8px;
+}
+
+.roll__button {
+    margin-top: 16px;
+    font-size: larger;
+    width: 100px;
+}
+
+.roll__button:hover {
+    background-color: sienna;
+    color: #FFFFFF;
+}
+
+.credits {
+    font-size: larger;
+}
+
+.message__input {
+    margin-left: 4%;
+    width: 70%;    
+}
+
+.send__button {
+    position: relative;
+    left: -2%;
+    width: 18%;
+    background-color: sienna;
+    padding: 5px 10px;
+    border: 1px solid sienna;
+    font-size: medium; 
+    margin-top: 16px; 
+    color: #FFF9F7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.server__box {
+    width: 450px;
+    font-size: small;
+}
+
+.bet {
+    display: block;
+    margin-top: 8px;
+}
+
+.bets {
+    height: 250px;
+    overflow: auto;
+}
+
+.verify__data {
+    width: 80%;
+    text-align: left;
+}
+
+.close__verify {
+    cursor: pointer;
+}
+
+.message {
+    border-bottom: 1px solid sienna;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.message__meta {
+    float: right;
+    margin-right: 4%;
+}
+
+.message__name {
+    margin-left: 4%;
+    font-style: italic;
+    color: sienna;
+}
+
+.message__main {
+    font-size: medium;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.register__instead {
+    cursor: pointer;
+}
