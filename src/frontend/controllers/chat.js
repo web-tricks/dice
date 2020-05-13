@@ -36,6 +36,7 @@ socket.on('message', async(message) => {
            displayMessage(message);
         }
     } catch(e) {
+        if (e === 'authentication') return userView.loginFormDisplay(elements.overlayBox);
         alert(e);
     }
     
