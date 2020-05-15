@@ -7,6 +7,8 @@ Minimal frontend is written in pure Javascript which is not optimized for mobile
 
 Check Implementation Here: [casino.webtricks.website](https://casino.webtricks.website)  
 
+Test Admin Panel: [dummy.webtricks.website](http://dummy.webtricks.website). Username: 'admin' Password: 'admin123'
+
 Created By: [webtricks](https://bitcointalk.org/index.php?action=profile;u=921974)
 
 **Note: I have written the whole script in just over 4 hours and haven't tested any code so make sure to test each and every line of code if you plan to use any part of this script for PRODUCTION PURPOSE.**
