@@ -21,5 +21,15 @@ module.exports = {
     sendMessage: document.querySelector('.send__message'),
     messageInput: document.querySelector('.message__input'),
     chatButton: document.querySelector('.send__button'),
-    chatArea: document.querySelector('.chat__messages')
+    chatArea: document.querySelector('.chat__messages'),
+    membersCount: document.querySelector('.members__count'),
+    adminTopBody: document.querySelector('.admin__body-top'),
+    showMembersButton: document.querySelector('.show__members-button'),
+    adminDisplayResult: document.querySelector('.display__result'),
+    adminUserForm:  document.querySelector('.member__search-form'),
+    adminBetsForm:  document.querySelector('.bet__search-form'),
+    adminUserInput:  document.querySelector('.member__search-input'),
+    adminBetsInput:  document.querySelector('.bet__search-input'),
+    holdButtonDiv: document.querySelector('.hold__button'),
+    adminOutputDisplay: document.querySelector('.output__display')
 }

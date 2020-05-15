@@ -1,0 +1,105 @@
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+    text-transform: uppercase;
+}
+
+.big__div {
+    width: 30%;
+    margin-left: 1%;
+    float: left;
+    padding: 8px;
+    text-align: center;
+    height: 200px;
+    margin-top: auto;
+    border-radius: 2%;
+}
+
+.big__div h2 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.big__div button, .big__div input[type="submit"] {
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.big__div input[type="text"] {
+    padding: 5px 15px;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid #ffffff;
+    color: #000000;
+    font-size: 16px;
+}
+
+.first {
+    background-color: #4169E2;
+}
+
+.second {
+    background-color: #FE003E;
+}
+
+.third {
+    background-color: #008001;
+}
+
+.hold__button {
+    float: right;
+    margin-right: 4%;
+}
+
+.output__display {
+    clear: both;
+    text-align: center;
+}
+
+.hold__button button {
+    padding: 5px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;   
+}
+
+.output__display span {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.submit-style, .output__display button {
+    margin-left: 8px;
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.output__display form {
+    position: relative;
+    top: 48px;
+}
+
+.output__display input {
+    margin-top: 16px;
+}
+
+footer {
+    height: 40px; 
+    position: fixed; 
+    bottom:0%;
+    width:100%; 
+}

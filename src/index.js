@@ -7,6 +7,7 @@ const http = require('http');
 const userRouter = require('./routers/user');
 const betRouter = require('./routers/bet');
 const chatRouter = require('./routers/chat');
+const adminRouter = require('./routers/admin');
 const chatAuth = require('./middleware/chatAuth');
 const generateMessage = require('./utils/chat');
 require('./db/mongoose');
@@ -22,6 +23,7 @@ app.use(cookieParser());
 app.use(userRouter);
 app.use(betRouter);
 app.use(chatRouter);
+app.use(adminRouter);
 app.use(express.static(path.join(__dirname, '../public')));
 
 //Chat setup - Socket.io

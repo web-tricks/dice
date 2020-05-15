@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-    entry: ['./src/frontend/controllers/index.js'],
+    entry: {
+        index: './src/frontend/controllers/index.js',
+        admin: './src/frontend/controllers/admin.js'
+    },
     output: {
         path: path.resolve(__dirname, './public'),
-        filename: 'js/app.js'
+        filename: 'js/[name].js'
     }
 }

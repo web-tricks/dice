@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <div class="admin__body-top">
+        <div class="big__div first">
+            <h2 class="members__count">Total Members: </h2>
+            <button class="show__members-button">Show All Members</button>
+        </div>
+        <div class="big__div second">
+            <h2>Edit Member By Username</h2>
+            <form class="member__search-form"> 
+                <input type="text" placeholder="Enter username" class="member__search-input">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <div class="big__div third">
+            <h2>Show Bets</h2>
+            <form class="bet__search-form">
+                <input type="text" placeholder="Enter username" class="bet__search-input">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+    <div class="display__result">
+        <div class="hold__button"></div>
+        <div class="output__display"></div>
+    </div>
+    <script src="js/admin.js"></script>
+    <footer>
+        Created by 
+        <a href="https://bitcointalk.org/index.php?action=profile;u=921974">webtricks</a>
+    </footer>
+</body>
+</html>

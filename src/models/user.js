@@ -45,6 +45,11 @@ const userSchema = new mongoose.Schema( {
         type: Number,
         default: 500
     },
+    role: {
+        type: String,
+        default: 'member',
+        enum: ['admin', 'member']
+    },
     seedHash: {
         type: String,
         required: true

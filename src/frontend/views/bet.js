@@ -10,8 +10,8 @@ const displayBet = (element,bet,where) => {
         <span class="bet" data-id="${bet._id}">
             <span class="bet__choice">${bet.display.choice}</span> | 
             <span class="bet__result">${bet.display.result}</span> |
-            <span class="bet__result">${bet.display.won}</span> |
-            <span class="bet__result">${(bet.display.payout).toFixed(8)}</span>
+            <span class="bet__won">${bet.display.won}</span> |
+            <span class="bet__payout">${(bet.display.payout).toFixed(8)}</span>
             <span class="bet__verify">Verify</span><br>
         </span>
     `;
